@@ -127,11 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="branch_delete.cpp" />
     <ClCompile Include="global.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="main_functions.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="branch_delete.h" />
     <ClInclude Include="global.h" />
     <ClInclude Include="main_functions.h" />
   </ItemGroup>
