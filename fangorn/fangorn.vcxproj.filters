@@ -24,12 +24,18 @@
     <ClCompile Include="global.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="branch_create.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main_functions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="branch_create.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
