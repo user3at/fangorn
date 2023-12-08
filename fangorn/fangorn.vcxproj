@@ -133,6 +133,7 @@
     <ClCompile Include="global.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="main_functions.cpp" />
+    <ClCompile Include="reset.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="branch_create.h" />
@@ -140,6 +141,7 @@
     <ClInclude Include="clone.h" />
     <ClInclude Include="global.h" />
     <ClInclude Include="main_functions.h" />
+    <ClInclude Include="reset.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
