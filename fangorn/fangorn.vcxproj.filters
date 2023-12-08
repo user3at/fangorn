@@ -36,6 +36,9 @@
     <ClCompile Include="reset.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="pull.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main_functions.h">
@@ -54,6 +57,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="reset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pull.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
