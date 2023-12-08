@@ -5,8 +5,10 @@ namespace function3at
 	{
 		std::cout << 
 R"(
-	[git clone] służy do pobrania repo zdalnego na lokalny serwer;
-
+********************
+*	[git clone] służy do pobrania repo zdalnego na lokalny serwer;
+*
+*
     1. Klonowanie:
         a. względne:
             $ git clone <url_of_repo>
