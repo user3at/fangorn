@@ -127,6 +127,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="add_dev.cpp" />
+    <ClCompile Include="add_dev.h" />
     <ClCompile Include="branch_create.cpp" />
     <ClCompile Include="branch_delete.cpp" />
     <ClCompile Include="clone.cpp" />

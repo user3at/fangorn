@@ -39,6 +39,12 @@
     <ClCompile Include="pull.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="add_dev.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="add_dev.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main_functions.h">
