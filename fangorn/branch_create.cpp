@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 
 namespace function3at
 {
@@ -11,7 +11,8 @@ namespace function3at
 *	git branch <name_of_branch>          == tworzy branch
 *
 *
-    
+
+    git branch                           == wyświetlenie listy odwołań do gałęzi lokalnych;    
 	git show-branch                      == lista galezi;
     git branch -a                        == printuje wszystkie galezie(lokalne i zdalne);
     git branch -r                        == printuje galezie zdalne;
