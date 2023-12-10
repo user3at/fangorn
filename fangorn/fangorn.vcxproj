@@ -136,6 +136,7 @@
     <ClCompile Include="global.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="main_functions.cpp" />
+    <ClCompile Include="merge.cpp" />
     <ClCompile Include="pull.cpp" />
     <ClCompile Include="reset.cpp" />
   </ItemGroup>
@@ -146,6 +147,7 @@
     <ClInclude Include="fetch.h" />
     <ClInclude Include="global.h" />
     <ClInclude Include="main_functions.h" />
+    <ClInclude Include="merge.h" />
     <ClInclude Include="pull.h" />
     <ClInclude Include="reset.h" />
   </ItemGroup>
