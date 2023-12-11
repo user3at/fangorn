@@ -33,7 +33,7 @@ namespace awiko {
             std::cout << "Wybierz poprawnie pozycje z menu(1-15): ";
             std::cin >> choice;
             std::cin.clear(); //wyczyszczenie flag bledow
-            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Ignorowanie b³êdnych danych w buforze
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Ignorowanie bï¿½ï¿½dnych danych w buforze
             std::system("cls");
         }
 
@@ -46,7 +46,7 @@ namespace awiko {
 
 
         case 2:
-            //2. Dodanie plików do indeksu
+            //2. Dodanie plikï¿½w do indeksu
 
             break;
 
@@ -64,32 +64,32 @@ namespace awiko {
 
 
         case 5:
-            //5. Przegl¹danie historii zmian
+            //5. Przeglï¿½danie historii zmian
 
             break;
 
 
         case 6:
-            //6. Przywracanie poprzednich wersji plików
+            //6. Przywracanie poprzednich wersji plikï¿½w
 
             break;
 
 
         case 7:
-            //7. Tworzenie ga³êzi
+            //7. Tworzenie gaï¿½ï¿½zi
             function3at::branch_create();
 
             break;
 
 
         case 8:
-            //8. Prze³¹czanie siê miêdzy ga³êziami
+            //8. Przeï¿½ï¿½czanie siï¿½ miï¿½dzy gaï¿½ï¿½ziami
 
             break;
 
 
         case 9:
-            //9. Scalanie ga³êzi
+            //9. Scalanie gaï¿½ï¿½zi
 
             break;
 
@@ -101,7 +101,7 @@ namespace awiko {
 
 
         case 11:
-            //11. Wysy³anie zmian do repozytorium zdalnego
+            //11. Wysyï¿½anie zmian do repozytorium zdalnego
 
             break;
 
@@ -125,7 +125,7 @@ namespace awiko {
 
 
         case 15:
-            //15. Wyjœcie z programu
+            //15. Wyjï¿½cie z programu
 
             break;
         }
