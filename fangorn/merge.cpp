@@ -7,15 +7,15 @@ namespace function3at
         std::cout <<
             R"(
     ********************   
-    * [$ git merge] ponowne połączenie podzielonej historii.
+    * [$ git merge] ponowne polaczenie podzielonej historii.
     * 
     
-       $ git merge == pozwala zebrać niezależne linie prac utworzonych przez 'git branch' i zintegrować je w pojedynczą gałąź.
-                   == polecenie powoduje scalenie z bieżącą gałęzią, która zostatnie zaktualizowana, docelowa gałąź zostanie nienaruszona.
+       $ git merge == pozwala zebrac niezalezne linie prac utworzonych przez 'git branch' i zintegrowac je w pojedyncza galaz.
+                   == polecenie powoduje scalenie z biezaca galezia, ktora zostatnie zaktualizowana, docelowa galaz zostanie nienaruszona.
 
-        I. Działanie
-            $ git merge powoduje połączenie wielu sekwencji commitów w pojedynczą ujednoliconą historię. Najczęściej wykorzystuje się do scalenia dwóch gałęzi. 
-                == wykorzystuje dwa wskaźniki commitów, zazwyczań końcówki gałęzi i wyszukuje ich wspólny commit bazowy. Gdy go znajdzie, git utworzy nowy 'commit scalenia', który obejmuje połączone zmiany z poszczególnych dodanych do kolejki sekwencji commitów scalenia. 
+        I. Dzialanie
+            $ git merge powoduje polaczenie wielu sekwencji commitow w pojedyncza ujednolicona historie. Najcześciej wykorzystuje sie do scalenia dwoch galezi. 
+                == wykorzystuje dwa wskazniki commitow, zazwyczan  kon cowki galezi i wyszukuje ich wspolny commit bazowy. Gdy go znajdzie, git utworzy nowy 'commit scalenia', ktory obejmuje polaczone zmiany z poszczegolnych dodanych do kolejki sekwencji commitow scalenia. 
 
                 git merge branch
                 git merge --no-ff branch 
@@ -26,19 +26,19 @@ namespace function3at
                 # feature
                 $ git merge feature
 
-                git merge feature == spowoduje scalenie wskazanej gałęzi z bieżącą gałęzią. git określi algorytmem scalania automatycznie. Commity scalenia różnią się od innych commitów tym, że mają DWA COMMITY NADRZEDNE. Git spróbuje w automatyczny sposób scalić odrębne historię, podczas tworzenia commita scalenia. Jeśli napotka dany fragment, który został zmieniony w obu historiach, nie będzie w stanie połączyć ich automatycznie. Taki scenariusz oznacza konflikt kontroli wersji i kontynuowanie procesu będzie wymagać interwencji ze strony usr.
+                git merge feature == spowoduje scalenie wskazanej galezi z biezaca galezia. git określi algorytmem scalania automatycznie. Commity scalenia roznia sie od innych commitow tym, ze maja DWA COMMITY NADRZEDNE. Git sprobuje w automatyczny sposob scalic odrebne historie, podczas tworzenia commita scalenia. Jeśli napotka dany fragment, ktory zostal zmieniony w obu historiach, nie bedzie w stanie polaczyc ich automatycznie. Taki scenariusz oznacza konflikt kontroli wersji i kontynuowanie procesu bedzie wymagac interwencji ze strony usr.
 
 
 
         II. Przygotowanie do scalenia
-            1. Potwierdzenie gałęzi odbiorczej:
+            1. Potwierdzenie galezi odbiorczej:
                 $ git branch
-                $ *master == operator '*' wskazuje na gałąź docelową;
+                $ *master == operator '*' wskazuje na galaz docelowa;
                     W przeciwnym wypadku:
                     $ git checkout master
             
-            2. Pobieranie najnowszych commitów zdalnych:
-                Chcesz zobaczyć rozwiązanie, napisz "lecimy to sprawdzić";
+            2. Pobieranie najnowszych commitow zdalnych:
+                Chcesz zobaczyc rozwiazanie, napisz "lecimy to sprawdzic";
             3. Scalanie
                 $ git branch
                 # *master
@@ -48,10 +48,10 @@ namespace function3at
 
             1. Scalanie z przewijaniem moze wystepowac:
             == gdy miedzy koncowkami <biezacej galezi>, a <galezia docelowa> istnieje sciezka liniowa;
-            == Zamiast scalenia galezi, git integruje historie, przewijajac (przenoszac) koncowke <biezącej gałęzi> do końcówki <gałęzi docelowej>;
-            == W ten sposób można skutecznie połączyć historię, ponieważ wszystki commity osiagalne z poziomu <gałęzi docelowej> są teraz dostępne za pośrednictwem <gałęzi bieżącej>;
+            == Zamiast scalenia galezi, git integruje historie, przewijajac (przenoszac) koncowke <biezacej galezi> do kon cowki <galezi docelowej>;
+            == W ten sposob mozna skutecznie polaczyc historie, poniewaz wszystki commity osiagalne z poziomu <galezi docelowej> sa teraz dostepne za pośrednictwem <galezi biezacej>;
         
-            Przykład 1
+            Przyklad 1
             $ mkdir loriens;
             $ cd liriens;
             $ touch tree;
@@ -73,10 +73,10 @@ namespace function3at
             $ git checkout master;
             $ git merge cherry;
             $ git log;
-            $ git branch -d cherry <- Git nie zwróci błędów ponieważ <branch> jest teraz dostępny w gałęzi <master>;
+            $ git branch -d cherry <- Git nie zwroci bledow poniewaz <branch> jest teraz dostepny w galezi <master>;
 
-            Jest to przepływ pracy stosowany powszechnie w odniesieniu do krótkich gałęzi tematycznych, które są wykorzystywane raczej do prowadzenia odizolowanych prac programistycznych niż jako narzędzie organizacyjne dla dłużej rozwijanych funkcji;
-            ?? Tutaj nie pojawią się konflikty scalenia; ??
+            Jest to przeplyw pracy stosowany powszechnie w odniesieniu do krotkich galezi tematycznych, ktore sa wykorzystywane raczej do prowadzenia odizolowanych prac programistycznych niz jako narzedzie organizacyjne dla dluzej rozwijanych funkcji;
+            ?? Tutaj nie pojawia sie konflikty scalenia; ??
 
                 ---
                 | git merge <branch>
@@ -84,8 +84,8 @@ namespace function3at
 
             2. Scalanie fast-forward:
             
-            == ułatwia operację ZMIANY BAZY;
-            == działa tak w przypadku niewielkich funkcji, lub poprawek błędów, zachowując scalenia trójstronne na potrzeby integracji funkcji, nad którymi prace trwają dłużej. 
+            == ulatwia operacje ZMIANY BAZY;
+            == dziala tak w przypadku niewielkich funkcji, lub poprawek bledow, zachowujac scalenia trojstronne na potrzeby integracji funkcji, nad ktorymi prace trwaja dluzej. 
 
 
             3. Scalanie z commitem scalenia:
@@ -93,28 +93,28 @@ namespace function3at
                     | git merge --no-ff <branch> -m "content of commit";
                     ---
 
-                == To polecenie powoduje scalenie konkretnej gałęzi z gałęzią bieżącą, ale zawsze generuje commit scalenia (nawet w przypadku SCALANIA Z PRZEWIJANIEM);
-                == To dobry sposób dokumentowania wszystkich scaleń w repo;
+                == To polecenie powoduje scalenie konkretnej galezi z galezia biezaca, ale zawsze generuje commit scalenia (nawet w przypadku SCALANIA Z PRZEWIJANIEM);
+                == To dobry sposob dokumentowania wszystkich scalen  w repo;
 
-            == Scalanie z przewijaniem nie będzie możliwę, jeśli gałęzie zostały rozdzielone;
+            == Scalanie z przewijaniem nie bedzie mozliwe, jeśli galezie zostaly rozdzielone;
             == dlatego wykorzystywana jest metoda:
 
                 ---
                 | git merge --no-ff <branch>
                 ---
 
-        IV. Scalanie trójstronne:
-            == Jesli nie ma ścieżki liniowej wiodącej do <gałęzi docelowej>:
-                == Git połączy gałęzie w wyniku SCALANIA TRÓJSTRONNEGO;
-                == Łączy się ze sobą dwie historię za pomocą <specjalnego commita>.
-                == Git generuje commit scalenia i łączy ze sobą:
-                    * dwóch końcówek gałęzi
-                    * ich wspólnego elementu nadrzędnego. 
+        IV. Scalanie trojstronne:
+            == Jesli nie ma ściezki liniowej wiodacej do <galezi docelowej>:
+                == Git polaczy galezie w wyniku SCALANIA TRoJSTRONNEGO;
+                == laczy sie ze soba dwie historie za pomoca <specjalnego commita>.
+                == Git generuje commit scalenia i laczy ze soba:
+                    * dwoch kon cowek galezi
+                    * ich wspolnego elementu nadrzednego. 
                 
-                Proces zachodzi gdy gałąź <master> i inne gałęzie są w toku. Jest to typowy scenariusz dla dużych projektów, lub gdy kilku programistów pracuje jednocześnie nad projektem;
-                ?? Tutaj pojawią się konflikty scalenia; ??
+                Proces zachodzi gdy galaz <master> i inne galezie sa w toku. Jest to typowy scenariusz dla duzych projektow, lub gdy kilku programistow pracuje jednocześnie nad projektem;
+                ?? Tutaj pojawia sie konflikty scalenia; ??
 
-            Przykład 2
+            Przyklad 2
             $ mkdir workshop;
             $ cd workshop;
             $ > workshop;
@@ -139,21 +139,21 @@ namespace function3at
             $ git log;
             
         
-            Należy zwrócić uwagę, że Git nie jest w stanie wykonać scalenia z przwijaniem, ponieaż nie da się przenieść gałęzi master w górę do gałęzi speed_cars bez cofania (BACKTRACKING);
+            Nalezy zwrocic uwage, ze Git nie jest w stanie wykonac scalenia z przwijaniem, ponieaz nie da sie przenieśc galezi master w gore do galezi speed_cars bez cofania (BACKTRACKING);
 
-            W przypadku większości przepływów pracy gałąź speed_cars byłaby znacznie większa, i dlatego w między czasie w gałęzi master pojawiłyby się commity. Gdyby gałąź funkcji byłaby tak mała jak 'przyklad 2':
-                * lepszym rozwiązaniem byłoby połączenie jej z gałęzią main za pomocą operacji <git rebase == ZMIANA BAZY>, a następnie wykonanie scalania z przewijaniem. Pozwoliłoby to uniknąc zaśmiecania historii porojektu niepotrzebnmi commitami scalenia.
+            W przypadku wiekszości przeplywow pracy galaz speed_cars bylaby znacznie wieksza, i dlatego w miedzy czasie w galezi master pojawilyby sie commity. Gdyby galaz funkcji bylaby tak mala jak 'przyklad 2':
+                * lepszym rozwiazaniem byloby polaczenie jej z galezia main za pomoca operacji <git rebase == ZMIANA BAZY>, a nastepnie wykonanie scalania z przewijaniem. Pozwoliloby to uniknac zaśmiecania historii porojektu niepotrzebnmi commitami scalenia.
 
-        V. Rozwiązywanie konfliktów 
-            Jeśli git napotka konflikt w trakcie scalania, przejdzie do edycja zawartości problematycznych plików, stosując wskaźniki wizualne:
+        V. Rozwiazywanie konfliktow 
+            Jeśli git napotka konflikt w trakcie scalania, przejdzie do edycja zawartości problematycznych plikow, stosujac wskazniki wizualne:
             <<<<<<<
-                // zawartość nad tym wskaźnikiem pochodzi z <gałęzi odbiorcze>
+                // zawartośc nad tym wskaznikiem pochodzi z <galezi odbiorcze>
             ======= 
-                // zawartośc pod tym wskaźnikiem pochodzi z <gałęzi docelowej>
+                // zawartośc pod tym wskaznikiem pochodzi z <galezi docelowej>
             >>>>>>>
-            Oznacza w taki sposób sprzeczności w plikach 'bieżącej gałęzi' i 'gałęzi docelowej';
+            Oznacza w taki sposob sprzeczności w plikach 'biezacej galezi' i 'galezi docelowej';
 
-            Przykład 3
+            Przyklad 3
             $ mkdir konflikty; cd konflikty;
             $ git init;
             $ > forge;
@@ -174,18 +174,18 @@ namespace function3at
 
             (master | MERGING)
             $ nano forge;
-            # usuń wskaźniki wizualne, ustaw która linija ma być na górze, dopisz 'anvil' po 'against';
+            # usun  wskazniki wizualne, ustaw ktora linija ma byc na gorze, dopisz 'anvil' po 'against';
             $ git add .;
             $ git commit -m "works done";
 
-            Przeczytaj więcej informacji na temat "git rebase";
+            Przeczytaj wiecej informacji na temat "git rebase";
 
         VI. Podsumowanie
-            1. Scanie w Git polega na łączeniu sekwencji commitów w pojedyncza, ujednoliconą historię commitów.
-            2. W Git isnieją dwa główne spsoby scalania:
+            1. Scanie w Git polega na laczeniu sekwencji commitow w pojedyncza, ujednolicona historie commitow.
+            2. W Git isnieja dwa glowne spsoby scalania:
                 * fast-forward
-                * trójstronne
-            3. Git scala commity automatycznie, chyba że w obydu sekwencjach commitów występują sprzeczne zmiany.
+                * trojstronne
+            3. Git scala commity automatycznie, chyba ze w obydu sekwencjach commitow wystepuja sprzeczne zmiany.
     )";
         /*
         std::cout << "faktycznie wybierz, 1 == y or 0 == n \n";

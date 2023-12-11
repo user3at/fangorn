@@ -6,24 +6,24 @@ namespace function3at
 		std::cout << 
 R"(
 ********************
-*	[git clone] służy do pobrania repo zdalnego na lokalny serwer;
+*	[git clone] sluzy do pobrania repo zdalnego na lokalny serwer;
 *
 *
     1. Klonowanie:
-        a. względne:
+        a. wzgledne:
             $ git clone <url_of_repo>
-            // Umieszczenie repo w bieżącym folderze.
+            // Umieszczenie repo w biezacym folderze.
                 ---
                 | git clone https://github.com/user3at/fangorn.git
                 ---
-        b. bezwzględne:
+        b. bezwzgledne:
             $ git clone <url> <directory>
-            // Umieszczenie repo w filderze o podanej ścieżce.
+            // Umieszczenie repo w filderze o podanej ściezce.
                 ---
                 | git clone https://github.com/user3at/fangorn.git d/git_project
                 ---
 
-    2. Klonowanie płytkie:
+    2. Klonowanie plytkie:
                 ---
                 | git clone --depth=1 <url_of_repo>
                 ---

@@ -21,18 +21,18 @@ namespace function3at
     I Dzialanie:
     Polecenie zapisuje zmiany dokonane na plikach w 'staging area',
     czyli, przenosi te zmiany z 'working directory' do 'staging area';
-    Jeśli zapisana migawka spełnia oczekiwania, zapisuje się ją w historii projektu z pomocą 'git commit';
+    Jesli zapisana migawka spelnia oczekiwania, zapisuje sie ja w historii projektu z pomoca 'git commit';
 
     II Przechowalnia:
-    'staging area' jest niczym bufor między 'working directory', a 'repository';
-    Zamiast zatwierdzać wszystkie zmiany wprowadzone od ostatniego commitu, można je pogrupować za sprawą przechowalni w ściśle wyspecjalizowane migawki przed zatwierdzeniem w gistorii projektu;
-    Umozliwia to wprowadzenie wszelkiego rodzaju zmian w niepowiązanych plikach, a następnie cofanie się i dzielenie ich na logiczne commity przez dodawanie powiązanych zmian do przechowalni i ich zatwierdzanie po kolei;
-    Ważne jest tworzenie pomniejszych commitó, tak aby w latwy sposob mozna sledzic bedy i cofac zmiany przy minimalnym wplywie na reszte projektu;
+    'staging area' jest niczym bufor miedzy 'working directory', a 'repository';
+    Zamiast zatwierdzac wszystkie zmiany wprowadzone od ostatniego commitu, mozna je pogrupowac za sprawa przechowalni w scisle wyspecjalizowane migawki przed zatwierdzeniem w gistorii projektu;
+    Umozliwia to wprowadzenie wszelkiego rodzaju zmian w niepowiazanych plikach, a nastepnie cofanie sie i dzielenie ich na logiczne commity przez dodawanie powiazanych zmian do przechowalni i ich zatwierdzanie po kolei;
+    Wazne jest tworzenie pomniejszych commito, tak aby w latwy sposob mozna sledzic bedy i cofac zmiany przy minimalnym wplywie na reszte projektu;
 
     III. Czeste polecenia:
     $ git add <file>  == dodanie konkretnego pliku do II drzewa; 
     $ git add <directory> == dodanie konkretnego katalogu do II drzewa;
-    $ git add -p == rozpoczyna interaktywną sesje zapisu w 'staging area', ktora pozwala wybrac fragmenty pliku do dodania do nastepnego commitu;
+    $ git add -p == rozpoczyna interaktywna sesje zapisu w 'staging area', ktora pozwala wybrac fragmenty pliku do dodania do nastepnego commitu;
                 == Przedstawiony zostaje fragment zmian i pojawia sie monit o wpisanie polecenia:
                      y == aby zapisac fragment w przechowalni;
                      n == aby zignorowac fragment;
@@ -44,7 +44,7 @@ namespace function3at
     git add == pelni taka sama funkcje == svn import;
 
         Polecenie 1: https://github.com
-        stwórz repo <loriens>
+        stworz repo <loriens>
 
         Polecenie 2: terminal git bash
         $ mkdir loriens 
@@ -63,8 +63,8 @@ namespace function3at
         $ git add .
         
         Sprawdz jak:
-            cofnąć migawkę z 'staging area' do 'working directory': "git reset";
-            cofnać commit z 'repository' do 'working directory': "git reset"
+            cofnac migawke z 'staging area' do 'working directory': "git reset";
+            cofnac commit z 'repository' do 'working directory': "git reset"
 
 
     )";

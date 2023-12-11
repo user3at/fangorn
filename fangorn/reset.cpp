@@ -10,7 +10,7 @@ R"(
 *   [git reset] (III << II) == do cofania commitow, lub migawek z przechowalni;  
 *
 *
-	  # na współpracy z ls-files --stage
+	  # na wspolpracy z ls-files --stage
         Sprawdz wiecej informacji w "info"
 
 
@@ -18,14 +18,14 @@ R"(
     
         # flagi --soft, --mixed, --hard: okreslaja sposob modyfikacji drzew indeksu przechowalni i katalogu roboczego;
 
-    git reset --hard == usunięcie wszystkich zmian w projekcie - z ostatniego commit'u;
+    git reset --hard == usuniecie wszystkich zmian w projekcie - z ostatniego commit'u;
                      == nieodwracalna kasacja;
                      == najczesciej stosowana;
 
-    git reset --mixed == domyślny tryb działania;
-                -- hard && -- mixed -> wykonywane jest względem wskaźnika HEAD i nie cofaliśmy się w czasie historii commitow;
+    git reset --mixed == domyślny tryb dzialania;
+                -- hard && -- mixed -> wykonywane jest wzgledem wskaznika HEAD i nie cofaliśmy sie w czasie historii commitow;
 
-    git reset --soft == cofa w czasie historii commitów.
+    git reset --soft == cofa w czasie historii commitow.
 
         ***
         * git reset --flag <HEAD == commit>
