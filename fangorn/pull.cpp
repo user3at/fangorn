@@ -10,6 +10,11 @@ R"(
     * 
     * 
     
+    0. Pobieranie plikow do lokalnego repozytorium
+    git fetch;
+    git checkout origin/pobranie_plikow;
+    git pull origin pobranie_plikow;
+
     $ git pull == najpierw uruchamia pocecenie git fetch, które służy do pobrania zawartości z okreslonego repozytorium zdalnego. Następnie wykonywane jest "$ git merge", aby scalić referencje i końcówki gałęzi zdalnej, tworząc nowy lokalny commit scalenia.        
         * 
         # 1. Działanie
