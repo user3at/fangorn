@@ -134,6 +134,7 @@
     <ClCompile Include="clone.cpp" />
     <ClCompile Include="fetch.cpp" />
     <ClCompile Include="global.cpp" />
+    <ClCompile Include="init.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="main_functions.cpp" />
     <ClCompile Include="merge.cpp" />
@@ -146,6 +147,7 @@
     <ClInclude Include="clone.h" />
     <ClInclude Include="fetch.h" />
     <ClInclude Include="global.h" />
+    <ClInclude Include="init.h" />
     <ClInclude Include="main_functions.h" />
     <ClInclude Include="merge.h" />
     <ClInclude Include="pull.h" />
