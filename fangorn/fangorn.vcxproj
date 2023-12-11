@@ -140,6 +140,7 @@
     <ClCompile Include="main_functions.cpp" />
     <ClCompile Include="merge.cpp" />
     <ClCompile Include="pull.cpp" />
+    <ClCompile Include="rebase.cpp" />
     <ClCompile Include="reset.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -153,6 +154,7 @@
     <ClInclude Include="main_functions.h" />
     <ClInclude Include="merge.h" />
     <ClInclude Include="pull.h" />
+    <ClInclude Include="rebase.h" />
     <ClInclude Include="reset.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
