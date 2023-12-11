@@ -135,6 +135,7 @@
     <ClCompile Include="config.cpp" />
     <ClCompile Include="fetch.cpp" />
     <ClCompile Include="global.cpp" />
+    <ClCompile Include="info.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="main_functions.cpp" />
     <ClCompile Include="merge.cpp" />
@@ -148,6 +149,7 @@
     <ClInclude Include="config.h" />
     <ClInclude Include="fetch.h" />
     <ClInclude Include="global.h" />
+    <ClInclude Include="info.h" />
     <ClInclude Include="main_functions.h" />
     <ClInclude Include="merge.h" />
     <ClInclude Include="pull.h" />
