@@ -4,5 +4,5 @@
 int main()
 {
 	function3at::hello();
-	Awiko::menu();
+	awiko::menu();
 }
