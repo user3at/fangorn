@@ -12,9 +12,13 @@ namespace function3at
 *	
 	$ git branch -D <name_of_branch> == dziala jak flaga 'force';
 										== umozliwa pominiecie "$ git merge";
-	Usuwanie zdalnych galezi moze odbyc sie na 2 SPOSOBY:
-		git push <skrot> -d <name_of_branch>
-		git push --delete <skrot> <name_of_branch>
+	
+I. Usuwanie zdalnych galezi moze odbyc sie na 2 SPOSOBY:
+	$ git push <skrot> -d <name_of_branch>
+	$git push --delete <skrot> <name_of_branch>
+ 
+II. usuwanie galezi zdalnej lub znacznika
+	$ git push origin :<branch_name>;
 
 )";
 	}
