@@ -23,7 +23,7 @@ $ git branch -m <old_name> <new_name>  == zmiana nazwy z dowolnego miejsca;
     | git branch <name_of_branch>
     ---
 
-                    Wiecej informacji jak zmienic aktualny branch znajdziesz: "git checkout";
+        Wiecej informacji jak zmienic aktualny branch znajdziesz: "git checkout";
 
     I. Tworzenie galezi w oparciu o 'remote'
         $ git checkout -b <remotebranch> origin/<remotebranch>;
