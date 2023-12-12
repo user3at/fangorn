@@ -132,6 +132,7 @@
     <ClCompile Include="branch_delete.cpp" />
     <ClCompile Include="checkout.cpp" />
     <ClCompile Include="clone.cpp" />
+    <ClCompile Include="config.cpp" />
     <ClCompile Include="fetch.cpp" />
     <ClCompile Include="global.cpp" />
     <ClCompile Include="init.cpp" />
@@ -148,6 +149,7 @@
     <ClInclude Include="branch_delete.h" />
     <ClInclude Include="checkout.h" />
     <ClInclude Include="clone.h" />
+    <ClInclude Include="config.h" />
     <ClInclude Include="fetch.h" />
     <ClInclude Include="global.h" />
     <ClInclude Include="init.h" />
