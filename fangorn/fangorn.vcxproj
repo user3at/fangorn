@@ -127,7 +127,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="add.cpp" />
+    <ClCompile Include="add_dev.cpp" />
+    <ClCompile Include="add_dev.h" />
+    <ClCompile Include="alias.cpp" />
     <ClCompile Include="branch_create.cpp" />
     <ClCompile Include="branch_delete.cpp" />
     <ClCompile Include="checkout.cpp" />
@@ -146,6 +148,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="add.h" />
+    <ClInclude Include="alias.h" />
     <ClInclude Include="branch_create.h" />
     <ClInclude Include="branch_delete.h" />
     <ClInclude Include="checkout.h" />
