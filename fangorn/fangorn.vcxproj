@@ -147,6 +147,7 @@
     <ClCompile Include="push.cpp" />
     <ClCompile Include="rebase.cpp" />
     <ClCompile Include="reset.cpp" />
+    <ClCompile Include="stash.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="add.h" />
@@ -166,6 +167,7 @@
     <ClInclude Include="pull.h" />
     <ClInclude Include="rebase.h" />
     <ClInclude Include="reset.h" />
+    <ClInclude Include="stash.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

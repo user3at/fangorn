@@ -75,6 +75,9 @@
     <ClCompile Include="ignore.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="stash.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main_functions.h">
@@ -126,6 +129,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ignore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stash.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
