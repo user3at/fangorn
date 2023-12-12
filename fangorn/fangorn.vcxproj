@@ -143,6 +143,7 @@
     <ClCompile Include="main_functions.cpp" />
     <ClCompile Include="merge.cpp" />
     <ClCompile Include="pull.cpp" />
+    <ClCompile Include="push.cpp" />
     <ClCompile Include="rebase.cpp" />
     <ClCompile Include="reset.cpp" />
   </ItemGroup>
