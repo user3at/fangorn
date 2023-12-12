@@ -3,3 +3,4 @@ namespace function3at
 {
 	void hello();
 }
+
