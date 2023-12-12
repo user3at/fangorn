@@ -4,10 +4,10 @@ namespace awiko
 	void reflog()
 	{
 		std::cout <<
-		R"(
-		********************
-		*
-		*
+R"(
+	********************
+	*
+	*
     $ git reflog =  to narzedzie, ktore przechowuje historie referencji (takich jak branchy czy HEAD). Git reflog pozwala na przegladanie historii zmian referencji, nawet jezli zostaly one usuniete.               
 
     1. Sprawdza historie zmian brancha (np. master)
@@ -58,6 +58,6 @@ namespace awiko
         git reset --hard jest uzywane do bezwarunkowego przywracania referencji do okreslonego stanu.    
                
 
-		)";
+)";
 	}
 }
