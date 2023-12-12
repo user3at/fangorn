@@ -127,14 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="add_dev.cpp" />
-    <ClCompile Include="add_dev.h" />
-    <ClCompile Include="blame.cpp" />
     <ClCompile Include="branch_create.cpp" />
-    <ClCompile Include="branch_delete.cpp" />
-    <ClCompile Include="clean.cpp" />
-    <ClCompile Include="clone.cpp" />
-    <ClCompile Include="fetch.cpp" />
     <ClCompile Include="global.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="main_functions.cpp" />
@@ -144,12 +137,7 @@
     <ClCompile Include="reset.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="blame.h" />
     <ClInclude Include="branch_create.h" />
-    <ClInclude Include="branch_delete.h" />
-    <ClInclude Include="clean.h" />
-    <ClInclude Include="clone.h" />
-    <ClInclude Include="fetch.h" />
     <ClInclude Include="global.h" />
     <ClInclude Include="main_functions.h" />
     <ClInclude Include="merge.h" />
