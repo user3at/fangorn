@@ -149,6 +149,7 @@
     <ClCompile Include="reflog.cpp" />
     <ClCompile Include="reset.cpp" />
     <ClCompile Include="stash.cpp" />
+    <ClCompile Include="revert.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="add.h" />
@@ -170,6 +171,7 @@
     <ClInclude Include="reflog.h" />
     <ClInclude Include="reset.h" />
     <ClInclude Include="stash.h" />
+    <ClInclude Include="revert.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
