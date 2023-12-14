@@ -147,6 +147,7 @@
     <ClCompile Include="push.cpp" />
     <ClCompile Include="rebase.cpp" />
     <ClCompile Include="reflog.cpp" />
+    <ClCompile Include="remote.cpp" />
     <ClCompile Include="reset.cpp" />
     <ClCompile Include="stash.cpp" />
   </ItemGroup>
@@ -168,6 +169,7 @@
     <ClInclude Include="pull.h" />
     <ClInclude Include="rebase.h" />
     <ClInclude Include="reflog.h" />
+    <ClInclude Include="remote.h" />
     <ClInclude Include="reset.h" />
     <ClInclude Include="stash.h" />
   </ItemGroup>
