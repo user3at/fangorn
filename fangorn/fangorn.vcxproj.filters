@@ -13,126 +13,141 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\content">
+      <UniqueIdentifier>{5dc207f9-4553-455a-ac7b-598fe504d6f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\control">
+      <UniqueIdentifier>{c4a78fcf-6063-4de4-b818-38158b4b6cbe}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="add_dev.h">
+      <Filter>Header Files\content</Filter>
     </ClCompile>
-    <ClCompile Include="main_functions.cpp">
+    <ClCompile Include="add_dev.cpp">
+      <Filter>Source Files\control</Filter>
+    </ClCompile>
+    <ClCompile Include="alias.cpp">
+      <Filter>Source Files\control</Filter>
+    </ClCompile>
+    <ClCompile Include="branch_create.cpp">
+      <Filter>Source Files\control</Filter>
+    </ClCompile>
+    <ClCompile Include="branch_delete.cpp">
+      <Filter>Source Files\control</Filter>
+    </ClCompile>
+    <ClCompile Include="checkout.cpp">
+      <Filter>Source Files\control</Filter>
+    </ClCompile>
+    <ClCompile Include="clone.cpp">
+      <Filter>Source Files\control</Filter>
+    </ClCompile>
+    <ClCompile Include="config.cpp">
+      <Filter>Source Files\control</Filter>
+    </ClCompile>
+    <ClCompile Include="fetch.cpp">
+      <Filter>Source Files\control</Filter>
+    </ClCompile>
+    <ClCompile Include="ignore.cpp">
+      <Filter>Source Files\control</Filter>
+    </ClCompile>
+    <ClCompile Include="info.cpp">
+      <Filter>Source Files\control</Filter>
+    </ClCompile>
+    <ClCompile Include="init.cpp">
+      <Filter>Source Files\control</Filter>
+    </ClCompile>
+    <ClCompile Include="merge.cpp">
+      <Filter>Source Files\control</Filter>
+    </ClCompile>
+    <ClCompile Include="pull.cpp">
+      <Filter>Source Files\control</Filter>
+    </ClCompile>
+    <ClCompile Include="push.cpp">
+      <Filter>Source Files\control</Filter>
+    </ClCompile>
+    <ClCompile Include="rebase.cpp">
+      <Filter>Source Files\control</Filter>
+    </ClCompile>
+    <ClCompile Include="reflog.cpp">
+      <Filter>Source Files\control</Filter>
+    </ClCompile>
+    <ClCompile Include="reset.cpp">
+      <Filter>Source Files\control</Filter>
+    </ClCompile>
+    <ClCompile Include="stash.cpp">
+      <Filter>Source Files\control</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="global.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="branch_create.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="branch_delete.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="clone.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="reset.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="pull.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="add_dev.h">
-      <Filter>Header Files</Filter>
-    </ClCompile>
-    <ClCompile Include="add_dev.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="alias.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="checkout.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="config.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="fetch.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="init.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="info.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="merge.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="push.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="rebase.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ignore.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="stash.cpp">
+    <ClCompile Include="main_functions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="add.h">
+      <Filter>Header Files\content</Filter>
+    </ClInclude>
+    <ClInclude Include="alias.h">
+      <Filter>Header Files\content</Filter>
+    </ClInclude>
+    <ClInclude Include="branch_create.h">
+      <Filter>Header Files\content</Filter>
+    </ClInclude>
+    <ClInclude Include="branch_delete.h">
+      <Filter>Header Files\content</Filter>
+    </ClInclude>
+    <ClInclude Include="checkout.h">
+      <Filter>Header Files\content</Filter>
+    </ClInclude>
+    <ClInclude Include="clone.h">
+      <Filter>Header Files\content</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>Header Files\content</Filter>
+    </ClInclude>
+    <ClInclude Include="fetch.h">
+      <Filter>Header Files\content</Filter>
+    </ClInclude>
+    <ClInclude Include="ignore.h">
+      <Filter>Header Files\content</Filter>
+    </ClInclude>
+    <ClInclude Include="info.h">
+      <Filter>Header Files\content</Filter>
+    </ClInclude>
+    <ClInclude Include="init.h">
+      <Filter>Header Files\content</Filter>
+    </ClInclude>
+    <ClInclude Include="merge.h">
+      <Filter>Header Files\content</Filter>
+    </ClInclude>
+    <ClInclude Include="pull.h">
+      <Filter>Header Files\content</Filter>
+    </ClInclude>
+    <ClInclude Include="rebase.h">
+      <Filter>Header Files\content</Filter>
+    </ClInclude>
+    <ClInclude Include="reflog.h">
+      <Filter>Header Files\content</Filter>
+    </ClInclude>
+    <ClInclude Include="reset.h">
+      <Filter>Header Files\content</Filter>
+    </ClInclude>
+    <ClInclude Include="stash.h">
+      <Filter>Header Files\content</Filter>
+    </ClInclude>
     <ClInclude Include="main_functions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="global.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="branch_create.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="branch_delete.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="clone.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="reset.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="pull.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="add.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="alias.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="checkout.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="config.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="fetch.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="init.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="info.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="merge.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="rebase.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ignore.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="stash.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="push.h">
+      <Filter>Header Files\content</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
