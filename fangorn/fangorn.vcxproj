@@ -132,6 +132,8 @@
     <ClCompile Include="alias.cpp" />
     <ClCompile Include="branch_create.cpp" />
     <ClCompile Include="branch_delete.cpp" />
+    <ClCompile Include="blame.cpp" />
+    <ClCompile Include="clean.cpp" />
     <ClCompile Include="checkout.cpp" />
     <ClCompile Include="clone.cpp" />
     <ClCompile Include="config.cpp" />
@@ -150,12 +152,15 @@
     <ClCompile Include="remote.cpp" />
     <ClCompile Include="reset.cpp" />
     <ClCompile Include="stash.cpp" />
+    <ClCompile Include="rm.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="add.h" />
     <ClInclude Include="alias.h" />
     <ClInclude Include="branch_create.h" />
     <ClInclude Include="branch_delete.h" />
+    <ClInclude Include="blame.h" />
+    <ClInclude Include="clean.h" />
     <ClInclude Include="checkout.h" />
     <ClInclude Include="clone.h" />
     <ClInclude Include="config.h" />
@@ -172,6 +177,7 @@
     <ClInclude Include="remote.h" />
     <ClInclude Include="reset.h" />
     <ClInclude Include="stash.h" />
+    <ClInclude Include="rm.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
