@@ -1,4 +1,5 @@
 #include <iostream>
+#include "global.h"
 
 namespace function3at
 {
@@ -21,5 +22,8 @@ namespace function3at
  			Wiecej informacji na temat tworzenia galezi znajdziesz: "git branch"
 
 )";
+
+		print_page();
+
 	}
 }

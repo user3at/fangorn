@@ -9,22 +9,22 @@ R"(
     *
     * 
 
-    $ git fetch == Pobierz wszystkie informacje o zdalnym repozytorium, w tym listę dostępnych gałęzi i zmian w bezpieczny sposób;
-                == czyli, pobiera commity, pliki i odwołania z repo zdalnego do loc;
-                == pobieranie umożliwia sprawdzenie, nad czym pracują inni użytkownicy.
-                    + umożliwia sprawdzenie postępów w historii centralnej;
+    $ git fetch == Pobierz wszystkie informacje o zdalnym repozytorium, w tym liste dostepnych galezi i zmian w bezpieczny sposob;
+                == czyli, pobiera commity, pliki i odwolania z repo zdalnego do loc;
+                == pobieranie umozliwia sprawdzenie, nad czym pracuja inni uzytkownicy.
+                    + umozliwia sprawdzenie postepow w historii centralnej;
                         >> przypomina to polecenit '$ svn update', nie wymaga scalania zmian z repozytorium;
                 == 'working directory' jest odizolowana od pobranego repo;
-                    == należy wyewidencjonować poleceniem 
+                    == nalezy wyewidencjonowac poleceniem 
                         $ git checkout                  
                             
-    II. Działanie polecenia z gałęziami zdalnymi
+    II. Dzialanie polecenia z galeziami zdalnymi
         
         1. Miejsce przechowywanych
-            * wszystkich commitów: lokalnych && zdalnych:
+            * wszystkich commitow: lokalnych && zdalnych:
                 ./.git/objects
 
-            1.1. odwołań do gałęzi:
+            1.1. odwolań do galezi:
                 *  lokalnej:
                     $ git branch
                         ./.git/refs/heads 
@@ -32,18 +32,18 @@ R"(
                 * zdalnej:
                     ./.git/refs/remotes
 
-        Gałęzie zdalne odzwierciedlają commity z repo innych programistów. 
-        Zabezpieczone w następujący sposób:
-            Nazwy gałęzi zdalnych:
-                - posiadają <nazwe elementu zdalnego> do którego należą;
+        Galezie zdalne odzwierciedlaja commity z repo innych programistow. 
+        Zabezpieczone w nastepujacy sposob:
+            Nazwy galezi zdalnych:
+                - posiadaja <nazwe elementu zdalnego> do ktorego naleza;
 
-        2. Przykłady przedstawiają gałęzie widoczne po pobraniu repozytorim zdalnego o <name>
+        2. Przyklady przedstawiaja galezie widoczne po pobraniu repozytorim zdalnego o <name>
             # origin/main
             # origin/back_door
 
-        3. Sprawdzenie gałęzi zdalnych 
+        3. Sprawdzenie galezi zdalnych 
             $ git checkout origin/back_door
-                następnie
+                nastepnie
                     $ git checkout log
 
         4. Synchronizacja repozytorim lokalnego ze zdalnym to:
@@ -51,29 +51,29 @@ R"(
                 1. pobieranie
                 2. scalenie
 
-            $ git pull to wygodny sposób skócenia tej proceduty
+            $ git pull to wygodny sposob skocenia tej proceduty
 
     III. Polecenia pobierania i opcje
 
-        $ git fetch <remote>  == pobiera wszystkie gałęzie z repozytorim. Umożliwia także pobranie wszystkich wymaganych zatwierdzeń oraz plików z drugiego repozytorium.
+        $ git fetch <remote>  == pobiera wszystkie galezie z repozytorim. Umozliwia takze pobranie wszystkich wymaganych zatwierdzeń oraz plikow z drugiego repozytorium.
 
         $ git fetch <remote> <branch>
             ---
             | $ git fetch origin 1.0.clone_dev
             ---
         
-        $ git fetch --all == pobiera wszystkie zarejestrowane elementy zdalne oraz ich gałęzie;
+        $ git fetch --all == pobiera wszystkie zarejestrowane elementy zdalne oraz ich galezie;
 
-        $ git fetch --dry-run == umożliwia próbne uruchomienie polecenia. Przedstawi przykłady działań, jakie zostaną wykonane podczas pobierania, ale ich nie zastosuje;
+        $ git fetch --dry-run == umozliwia probne uruchomienie polecenia. Przedstawi przyklady dzialań, jakie zostana wykonane podczas pobierania, ale ich nie zastosuje;
 
-    IV. Przykłady poleceń pobierania w środowisku
+    IV. Przyklady poleceń pobierania w środowisku
 
-        1. git fetch - gałąź zdalna
+        1. git fetch - galaz zdalna
             
             Do zrobienia:
-            1. Stórz centralne_repo i wprowadź tam zmany;
+            1. Storz centralne_repo i wprowadz tam zmany;
             2. Sklonuj to repo jako inny projekt;
-            3. Stwórz dodatkowe repozytorim zdalne o nazwie coworkers_repo z gałęzią feature_branch;
+            3. Stworz dodatkowe repozytorim zdalne o nazwie coworkers_repo z galezia feature_branch;
             
 
 
