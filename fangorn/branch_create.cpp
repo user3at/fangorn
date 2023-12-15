@@ -1,4 +1,5 @@
 #include <iostream>
+#include "branch_delete.h"
 
 namespace function3at
 {
@@ -32,5 +33,6 @@ $ git branch -m <old_name> <new_name>  == zmiana nazwy z dowolnego miejsca;
         $ git checkout -b <branch_name>;
         $ git reset --hard origin/<branch_name>;
 )";
+        function3at::branch_delete();
     }
 }

@@ -47,52 +47,52 @@ namespace function3at
     
     void przypisujaca_do_zmiennej_polecenie(std::string choice, command& operacja_polecenia)
     {
-        if (choice == "info")
+        if (choice == "git info")
             { operacja_polecenia = command::info; }
-        else if (choice == "init")
+        else if (choice == "git init")
             { operacja_polecenia = command::info; }
-        else if (choice == "clone")
+        else if (choice == "git clone")
         { operacja_polecenia = command::clone; }
-        else if (choice == "config")
+        else if (choice == "git config")
             { operacja_polecenia = command::config; }
-        else if (choice == "alias")
+        else if (choice == "git alias")
             { operacja_polecenia = command::alias; }
-        else if (choice == "status")
+        else if (choice == "git status")
             { operacja_polecenia = command::status; }
-        else if (choice == "add")
+        else if (choice == "git add")
             { operacja_polecenia = command::add; }
-        else if (choice == "commit")
+        else if (choice == "git commit")
             { operacja_polecenia = command::commit; }
-        else if (choice == "diff")
+        else if (choice == "git diff")
             { operacja_polecenia = command::diff; }
-        else if (choice == "stash")
+        else if (choice == "git stash")
             { operacja_polecenia = command::stash; }
-        else if (choice == "ignore")
+        else if (choice == "git ignore")
             { operacja_polecenia = command::ignore; }
-        else if (choice == "clean")
+        else if (choice == "git clean")
             { operacja_polecenia = command::clean; }
-        else if (choice == "revert")
+        else if (choice == "git revert")
             { operacja_polecenia = command::revert; }
-        else if (choice == "reset")
+        else if (choice == "git reset")
             { operacja_polecenia = command::reset; }
-        else if (choice == "rebase")
+        else if (choice == "git rebase")
             { operacja_polecenia = command::rebase; }
-        else if (choice == "remote")
+        else if (choice == "git remote")
             { operacja_polecenia = command::remote; }
-        else if (choice == "fetch")
+        else if (choice == "git fetch")
             { operacja_polecenia = command::fetch; }
-        else if (choice == "push")
+        else if (choice == "git push")
             { operacja_polecenia = command::push; }
-        else if (choice == "pull")
+        else if (choice == "git pull")
             { operacja_polecenia = command::pull; }
-        else if (choice == "branch")
+        else if (choice == "git branch")
             { operacja_polecenia = command::branch; }
-        else if (choice == "checkout")
+        else if (choice == "git checkout")
             { operacja_polecenia = command::checkout; }
-        else if (choice == "merge")
+        else if (choice == "git merge")
             { operacja_polecenia = command::merge; }
-        else if (choice == "blame")
-            { operacja_polecenia == command::blame; }
+        else if (choice == "git blame")
+            { operacja_polecenia = command::blame; }
         else
             { std::cout << "somthing was wrong \n"; }
 
@@ -104,76 +104,80 @@ namespace function3at
         switch (operacja_polecenie)
         {
             case command::info:
-                { info(); }
+                { function3at::info(); }
                 break;
             case command::init:
-                { init(); }
-            break;
+                { function3at::init(); }
+                break;
             case command::clone:
-            { clone(); }
-            break;
+                { function3at::clone(); }
+                break;
             case command::config:
-            { config(); }
-            break;
+                { function3at::config(); }
+                break;
             case command::alias:
-            { alias(); }
-            break;
+                { function3at::alias(); }
+                break;
             case command::status:
-            //{ status(); }
-            break;
+                { awiko::status(); }
+                break;
             case command::add:
-            { add(); }
-            break;
+                { add(); }
+                break;
             case command::commit:
-            //{ commit(); }
-            break;
+                //{ awiko::commit(); }
+                break;
             case command::diff:
-            //{ diff(); }
-            break;
+                //{ awiko::diff(); }
+                break;
             case command::stash:
-            { stash(); }
-            break;
+                { function3at::stash(); }
+                break;
             case command::ignore:
-            { ignore(); }
-            break;
+                { function3at::ignore(); }
+                break;
             case command::clean:
-            //{ clean(); }
-            break;
+                { awiko::clean(); }
+                break;
             case command::revert:
-            //{ revert(); }
-            break;
+                { awiko::revert(); }
+                break;
             case command::reset:
-            { reset(); }
-            break;
+                { function3at::reset(); }
+                break;
             case command::rm:
-            //{ rm(); }
-            break;
+                { awiko::rm(); }
+                break;
             case command::rebase:
-            //{ rebase(); }
-            break;
+                { awiko::rebase(); }
+                break;
             case command::reflog:
-            //{ reflog(); }
-            break;
+                { awiko::reflog(); }
+                break;
             case command::remote:
-            //{ remote(); }
-            break;
+                { awiko::remote(); }
+                break;
             case command::fetch:
-            { fetch(); }
-            break;
+                { function3at::fetch(); }
+                break;
             case command::push:
-            { push(); }
-            break;
+                { function3at::push(); }
+                break;
             case command::pull:
-            { pull(); }
-            break;
+                { function3at::pull(); }
+                break;
             case command::branch:
-            { checkout(); }
-            break;
+                { function3at::branch_create(); }
+                break;
             case command::merge:
-            { merge(); }
+                { function3at::merge(); }
+                break;
             case command::blame:
-            //{ blame(); }
-            break;
+                { awiko::blame(); }
+                break;
+            case command::checkout:
+                { function3at::checkout(); }
+                break;
         }
     }
 }

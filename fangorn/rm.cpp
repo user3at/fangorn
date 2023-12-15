@@ -1,6 +1,6 @@
 #include <iostream>
 
-namespace Awiko
+namespace awiko
 {
     void rm()
     {

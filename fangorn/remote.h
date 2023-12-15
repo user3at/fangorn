@@ -1,5 +1,5 @@
 #pragma once
-namespace Awiko
+namespace awiko
 {
 	void remote();
 }
