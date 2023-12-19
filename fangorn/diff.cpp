@@ -1,60 +1,61 @@
 #include <iostream>
 namespace awiko
 {
-    void diff()
-    {
-        std::cout <<
-            R"(
+	void diff()
+	{
+		std::cout <<
+			R"(
 	********************
 	*
 	*
-	$ git commit to polecenie, ktore jest uzywane do zatwierdzania zmian wprowadzonych w indeksie (staging area). Pozwala na utworzenie nowego commita, ktory reprezentuje konkretny punkt w historii projektu 
+	$ git diff to polecenie, ktore jest uzywane do porownywania roznic miedzy roznymi stanami w historii repozytorium. Dziala na poziomie plikow i pozwala zobaczyc, jakie konkretne zmiany zostaly wprowadzone w poszczegolnych plikach
     
 	1. Przyklad wykorzystania w praktyce
 
-		a) Tworzenie punktow zatwierdzenia (Commitow):
+		a) Porownywanie zmian wprowadzonych w katalogu roboczym:
 
-			'git commit' tworzy nowy commit, ktory zawiera zmiany zatwierdzone w indeksie. Ka¿dy commit reprezentuje konkretne zmiany w projekcie.
+			'git diff' porownuje roznice miedzy katalogiem roboczym (aktualny stan plikow) a ostatnim zatwierdzonym commitem (stan indeksu)
 		
 	
-		b) Historia projektu:
+		b) Porownanie miedzy Commitami:
 
-			Zatwierdzone commity tworza historie projektu, umozliwiajac sledzenie, kiedy i jakie zmiany zosta³y wprowadzone.		
+			polecenie 'git diff' mozemy uzyc do porownania konkretnych commitow - musimy jedynie podac identyfikatory SHA commitow	
+	
 
-		c) Opisy Zmian:
+		c) Wykrywanie zmian w branchach:
 
-			Pozwala na dodanie komentarza (wiadomoœci commita) opisujacego, co zostalo zmienione i dlaczego, co ulatwia zrozumienie historii projektu.
+			Pozwala na porównanie roznic miedzy dwiema galeziami lub pomiedzy galezia a konkretnym commitem
 
 
 
 
 	2. Przyklady
 
-		a) Zatwierdzanie Wszystkich Zmian
+		a) Porowananie zmian w katalogu roboczym
 
-			git commit -m "Dodano now¹ funkcje"
+			git diff
 
-		b) Zatwierdzanie Wybranych Zmian
+		b) Porownanie miedzy Commitami
 
-			git commit -m "Naprawa b³êdu" plik_1 plik_2
+			git diff SHA_commita_1 SHA_commita_2
 
-		c) Zatwierdzanie z Wiadomoœcia w Edytorze
+		c) Porownanie branchy
 
-			git commit
+			git diff ga³az_1 ga³az_2
 
-		d) Zatwierdzanie ze Zmianami Wprowadzonymi w Poprzednim Commicie
+		d) Porownanie zmian wprowadzonych w indeksie
 
-			git commit --amend
+			git diff --staged
 
 
 	3. Opcje
 
-		-m: Pozwala na dodanie wiadomosci commita bez koniecznosci otwierania edytora.
+		-u: Okreœla format wyjœcia, np. "unified" (domyœlny) pokazuje zmiany w stylu diff -u.
 
-		-a: Automatycznie zatwierdza wszystkie zmiany w indeksie.
+		--color: Dodaje kolorowanie do wyniku, co u³atwia zrozumienie zmian.
 
-		--amend: Pozwala na wprowadzenie dodatkowych zmian do ostatniego commita.
+		--stat: Wyœwietla krótki podsumowuj¹cy statystykê zmian.
 
 	)";
-    }
+	}
 }
