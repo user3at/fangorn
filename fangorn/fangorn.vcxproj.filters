@@ -21,12 +21,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="add_dev.h">
-      <Filter>Header Files\content</Filter>
-    </ClCompile>
-    <ClCompile Include="add_dev.cpp">
-      <Filter>Source Files\control</Filter>
-    </ClCompile>
     <ClCompile Include="alias.cpp">
       <Filter>Source Files\control</Filter>
     </ClCompile>
@@ -85,6 +79,36 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="main_functions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="add.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="blame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clean.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="remote.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="status.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="revert.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="diff.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="commit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="menu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -148,6 +172,33 @@
     </ClInclude>
     <ClInclude Include="push.h">
       <Filter>Header Files\content</Filter>
+    </ClInclude>
+    <ClInclude Include="blame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clean.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="remote.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="status.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="revert.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="diff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="commit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="menu.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
